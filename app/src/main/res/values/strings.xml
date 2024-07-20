@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">My Books</string>
+    <string name="btn_continue">Continue</string>
+    <string name="step_one_onboarding">My Books, personalize de acordo com suas preferências.</string>
+    <string name="step_two_onboarding">faça sua biblioteca virtual </string>
+    <string name="description_lorem">Lorem Ipsum is simply dummy text of the printing and</string>
+    <string name="text_title_login">Cadastro</string>
+    <string name="text_title_name">categoria</string>
+    <string name="text_title_details">Detalhes do Livro</string>
+    <string name="text_description_solicitation">books</string>
+    <string name="text_imput_email">E-mail</string>
+    <string name="text_imput_name">Nome</string>
+    <string name="text_imput_phone">Telefone</string>
+    <string name="text_imput_birthday">Data de nascimento</string>
+    <string name="text_imput_password">Senha</string>
+    <string name="text_imput_confirm_password">Confirme sua senha</string>
+    <string name="btn_enter">Entrar</string>
+    <string name="btn_register">Cadastrar</string>
+    <string name="home_welcome">Seja bem vindo(a)!</string>
+    <string name="text_continue_no_auth">Cadastre aqui!</string>
+    <string name="btn_contact">Eu Quero!</string>
+    <string name="text_visit">Visitante</string>
+    <string name="text_category">Categorias</string>
+    <string name="text_recommended">Recomendados</string>
+    <string name="text_name_category">book</string>
+    <string name="text_register_description">Cadastre-se agora e aproveite todos os recursos do nosso aplicativo para gerenciar sua coleção de livros de forma fácil e organizada. Adicione, categorize e acompanhe seus títulos favoritos com praticidade e eficiência.</string>
+    <string name="text_new_book_description">Adicione um novo livro à sua coleção preenchendo os campos abaixo.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

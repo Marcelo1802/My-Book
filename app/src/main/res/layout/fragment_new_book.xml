@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.book.NewBookFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Novo Livro"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:backgroundTint="@color/black"
+            android:padding="8dp"
+            android:src="@drawable/ic_backward_arrow"
+            app:layout_constraintBottom_toBottomOf="@+id/text_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_title" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:text="@string/text_new_book_description"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image_photo"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="36dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/text_description"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="@+id/text_description"
+            app:layout_constraintTop_toBottomOf="@id/text_description"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize12Percent"
+            android:src="@drawable/ic_launcher_background" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_edit_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintBottom_toBottomOf="@+id/image_photo"
+            app:layout_constraintEnd_toEndOf="@+id/image_photo" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_layout_title_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="44dp"
+            android:text="Titulo do livro"
+            android:textSize="15sp"
+            app:fontFamily="@font/poppins_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_photo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_title_book_layout"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            app:boxStrokeWidth="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/text_layout_title_book"
+            app:layout_constraintTop_toBottomOf="@+id/text_layout_title_book">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_title_book"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_layout_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="Resumo do livro"
+            android:textSize="15sp"
+            app:fontFamily="@font/poppins_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_title_book_layout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_summary_layout"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            app:boxStrokeColor="@color/light_gray"
+            app:boxStrokeWidth="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/text_layout_summary"
+            app:layout_constraintTop_toBottomOf="@+id/text_layout_summary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_summary"
+                android:layout_width="match_parent"
+                android:layout_height="179dp"
+                android:focusable="true"
+                android:gravity="top"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_layout_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Autor"
+            android:textSize="15sp"
+            app:fontFamily="@font/poppins_light"
+            app:layout_constraintStart_toStartOf="@+id/input_summary_layout"
+            app:layout_constraintTop_toBottomOf="@+id/input_summary_layout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_autor_layout"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            app:boxStrokeColor="@color/light_gray"
+            app:boxStrokeWidth="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/text_layout_author"
+            app:layout_constraintTop_toBottomOf="@+id/text_layout_author">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_autor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:imeOptions="actionDone"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_layout_categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Categoria"
+            android:textSize="15sp"
+            app:fontFamily="@font/poppins_light"
+            app:layout_constraintStart_toStartOf="@+id/input_autor_layout"
+            app:layout_constraintTop_toBottomOf="@+id/input_autor_layout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_categories"
+            style="@style/TextInputLayoutStyleDrop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/light_gray"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconDrawable="@drawable/ic_arrow_down"
+            app:endIconTint="@color/gray"
+            app:layout_constraintEnd_toEndOf="@id/input_autor_layout"
+            app:layout_constraintHorizontal_weight="3"
+            app:layout_constraintStart_toStartOf="@+id/text_layout_categories"
+            app:layout_constraintTop_toBottomOf="@+id/text_layout_categories">
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_categories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="false"
+                android:imeOptions="actionNext"
+                android:inputType="none"
+                android:textColor="@color/gray" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_enter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/bg_button_radius_12"
+            android:backgroundTint="@color/theme"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/btn_register"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_categories" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
